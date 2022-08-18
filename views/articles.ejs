@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CodeWiki</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <input type="text" name="title" placeholder="title">
+      <input type="text" name="content" placeholder="content">
+      <input type="submit">
+    </form>
+    <hr />
+    <form action="/" method="delete">
+      <input type="submit">
+    </form>
+    <hr />
+    <tr>
+      <%for (let i = 0; i < list.length; i++){%>
+        <td><%=list[i].title%></td>
+      <%}%>
+    </tr>
+    <hr />
+    <form action="/articles" method="post">
+      <input type="text" name="searchTitle" placeholder="search-title">
+      <input type="submit">
+    </form>
+  </body>
+</html>

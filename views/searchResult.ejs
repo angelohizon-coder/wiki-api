@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CodeWiki</title>
+  </head>
+  <body>
+    <% if (list.length === 0) { %>
+        <h1>No Articles Found</h1>
+    <% } %>
+    <%for (let i = 0; i < list.length; i++){%>
+      <td><a href="articles/<%=list[i].title%>"><%=list[i].title%></td>
+    <%}%>
+  </body>
+</html>
